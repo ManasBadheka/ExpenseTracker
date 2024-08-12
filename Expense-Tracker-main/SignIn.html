@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Expense Tracker - Sign In</title>
+  <style>
+    body {
+      background: rgb(226,113,163);
+background: -moz-linear-gradient(90deg, rgba(226,113,163,1) 0%, rgba(232,99,179,1) 13%, rgba(175,92,224,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(226,113,163,1) 0%, rgba(232,99,179,1) 13%, rgba(175,92,224,1) 100%);
+background: linear-gradient(90deg, rgba(226,113,163,1) 0%, rgba(232,99,179,1) 13%, rgba(175,92,224,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e271a3",endColorstr="#af5ce0",GradientType=1);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      top: 50%;
+      right: 25%;
+      left: 25%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #a70175 ;
+      
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #020202;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function SignIn() {
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Daily Expense Tracker - Sign In</h2>
+    <form action="your-login-handler.php" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" onclick="SignIn()">Sign In</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
